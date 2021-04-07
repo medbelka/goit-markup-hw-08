@@ -1,0 +1,12 @@
+$colors: (
+    'background': #ffffff,
+    'brand': #2196f3,
+    'primary': #212121,
+    'secondary': #757575,
+    'bgsecondary': #2f303a,
+    'adrress-op60': rgba(255, 255, 255, 0.6),
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

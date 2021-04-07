@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+  
+*::before,
+::after {
+    box-sizing: inherit;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+h1,
+h3,
+h4,
+p,
+.product-title {
+    margin: 0;
+}
+  
+h2 {
+    @media screen and (min-width: 1600px) {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
+  
+button {
+    cursor: pointer;
+    border: none;
+}
+  
+.wrapper {
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        max-width: 1600px;
+    }
+}
+
+.hidden {
+    display: none;
+}  

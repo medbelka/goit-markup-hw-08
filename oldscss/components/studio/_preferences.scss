@@ -1,0 +1,53 @@
+.preferences {
+    padding-top: getGap('gap94');
+
+    &__item {
+        width: calc(100% / 4 - getGap('gap94'));
+        margin-right: getGap('gap30');
+    }
+
+    &__icon {
+        background-color: #f5f4fa;
+        height: 120px;
+        margin-bottom: getGap('gap30');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: getColor('primary');
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        color: getColor('primary');
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+      
+    &__description {
+        color: getColor('secondary');
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 146%;
+        letter-spacing: 0.03em;
+    }
+}
+  
+.preferences__list,
+.whatwedo__list,
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.preferences__list:last-child {
+    margin-right: 0;
+}
+  
+.container--gap {
+    padding-top: getGap('gap94');
+    padding-bottom: getGap('gap94');
+}
+  

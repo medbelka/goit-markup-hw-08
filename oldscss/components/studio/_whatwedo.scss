@@ -1,0 +1,56 @@
+.whatwedo {
+    &__title {
+        color: getColor('primary');
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    &__list {
+        display: inline-flex;
+    }
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__thumb {
+        position: absolute;
+        width: 370px;
+        min-height: 70px;
+        bottom: 4px;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+    
+    &__desc {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.46;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        align-items: center;
+    }
+}
+
+.whatwedo__item {
+    width: calc(100% - getGap('gap30') / 3);
+    margin-right: getGap('gap30');
+    display: block;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.staff-card__list,
+.whatwedo__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

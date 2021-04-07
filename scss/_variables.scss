@@ -1,0 +1,12 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+$gap: (
+    'gap30': 30px,
+    'gap94': 94px,
+);
+
+@function getGap($key) {
+    @return map-get($gap, $key);
+}
